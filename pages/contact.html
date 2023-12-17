@@ -2,8 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
-    
+    <title>Contacto</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,85 +11,105 @@
 </head>
 <body class="bg-neutral-800">
     <!-- Navbar -->
-    <nav
-    class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-neutral-800 font-gobold" id="navbarInteraction" onchange="stickynav('navbarInteraction') "
-  >
-    <div
-      class="container px-4 mx-auto flex flex-wrap items-center justify-center"
+   <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-neutral-800 font-gobold" id="navbarInteraction" onchange="stickynav('navbarInteraction') "
     >
       <div
-        class="w-full relative flex justify-around lg:w-auto lg:static lg:block lg:justify-around"
+        class="container px-4 mx-auto flex flex-wrap items-center justify-center"
       >
-        <a
-          class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white lg:hidden"
-          href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation "
-          ><img class="w-1/4" src="/resources/Logo web_Mesa de trabajo 1.png" alt=""></a
-        ><button
-          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-          type="button"
-          onclick="toggleNavbar('example-collapse-navbar')"
+        <div
+          class="w-full relative flex justify-around lg:w-auto lg:static lg:block lg:justify-around"
         >
-          <i class=" hover:text-yellow-400 text-white fas fa-bars"></i>
-        </button>
+          <a
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white lg:hidden"
+            href="../src/index.html"
+            ><img class="w-1/4" src="/resources/Logo web_Mesa de trabajo 1.png" alt=""></a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar','block')"
+          >
+            <i class=" hover:text-yellow-400 text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class=" w-full hidden lg:flex lg:justify-center  items-center  lg:bg-transparent lg:shadow-none "
+          id="example-collapse-navbar"
+        >
+          <ul class="flex  items center flex-col lg:flex-row list-none lg:justify-center ">
+            <li class="flex justify-center">
+              <a
+                class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400  px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
+                href="../pages/logistics.html"
+                >Logistica</a
+              >
+            </li>
+            <li class="flex  items-center flex-col  ">
+              <button  class="mt-3 lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 
+               px-3 py-4 lg:py-2 flex items-center text-xs uppercase" type="button"
+               onclick="toggleNavbar('dropdownHover','absolute')"
+               >Fabrica <svg class="w-2.5 h-2.5 ms-2.5" 
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+                </button>
+                
+                <div id="dropdownHover" class=" mt-11 hidden bg-neutral-800 px-3.5 rounded-b-lg ">
+                    <ul class="" aria-labelledby="dropdownHoverButton">
+                      <li class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400   py-4 lg:py-2 flex justify-center text-xs uppercase ">
+                        <a href="../pages/factory.html" class="">Servicios</a>
+                      </li>
+                      <li class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400   py-4 lg:py-2 flex justify-center text-xs uppercase ">
+                        <a href="../pages/ideas_BA_Box.html" class="">Ideas Box</a>
+                      </li>
+                      <li class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400   py-4 lg:py-2 flex justify-center text-xs uppercase ">
+                        <a href="../pages/ideas_BA.html" class="">Ideas BA</a>
+                      </li>
+                     
+                
+                    </ul>
+                </div>
+             
+            </li>
+            <li class="flex justify-center">
+              <a
+                class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
+                href="../pages/places.html"
+                >Locales</a
+              >
+            </li>
+            <li class="hidden  justify-center lg:block lg:w-1/5">
+              <a
+                class="w-1/2  ml-auto mr-auto  lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
+                href="../src/index.html"
+                ><img class="" src="/resources/Logo web_Mesa de trabajo 1.png" alt="Logo Papelera"></a
+              >
+            </li>
+            <li class="flex justify-center">
+              <a
+                class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
+                href="#pablo"
+                >Tienda</a
+              >
+            </li>
+            <li class="flex justify-center">
+              <a
+                class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
+                href="../pages/us.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="flex justify-center">
+              <a
+                class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
+                href="../pages/contact.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <div
-        class=" w-full hidden lg:flex lg:justify-center  items-center  lg:bg-transparent lg:shadow-none "
-        id="example-collapse-navbar"
-      >
-        <ul class="flex  items center flex-col lg:flex-row list-none lg:justify-center ">
-          <li class="flex justify-center">
-            <a
-              class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400  px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="#pablo"
-              >Productos</a
-            >
-          </li>
-          <li class="flex justify-center">
-            <a
-              class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="../pages/factory.html"
-              >Fabrica</a
-            >
-          </li>
-          <li class="flex justify-center">
-            <a
-              class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="../pages/places.html"
-              >Locales</a
-            >
-          </li>
-          <li class="hidden  justify-center lg:block lg:w-1/5">
-            <a
-              class="w-1/2  ml-auto mr-auto  lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="../src/index.html"
-              ><img class="" src="/resources/Logo web_Mesa de trabajo 1.png" alt="Logo Papelera"></a
-            >
-          </li>
-          <li class="flex justify-center">
-            <a
-              class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="#pablo"
-              >Tienda</a
-            >
-          </li>
-          <li class="flex justify-center">
-            <a
-              class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="../pages/us.html"
-              >Nosotros</a
-            >
-          </li>
-          <li class="flex justify-center">
-            <a
-              class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="../pages/contact.html"
-              >Contacto</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>  
     <main>
     
         <div
@@ -145,7 +164,7 @@
        
         <section class="pb-6 relative block bg-yellow-500">
           <div
-            class="bottom-auto -top-0.5 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+            class="bottom-auto -top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style="height: 80px;"
           >
             <svg
@@ -158,7 +177,7 @@
               y="0"
             >
               <polygon
-                class="text-neutral-800 fill-current"
+                class="text-yellow-500 fill-current"
                 points="2560 0 2560 100 0 100"
               ></polygon>
             </svg>
@@ -180,30 +199,21 @@
                           <div class="w-32 h-2 bg-yellow-400 rounded-full mb-5  ">
                           </div>
                         </div>
-                        <div class="mb-5 max-w-2xl px-5 flex justify-start  items-center">
+                        <div class="mb-2  px-5 flex justify-start items-center">
                           <div class="w-full  rounded-r-lg   flex flex-wrap flex-col justify-start items-center ">
                           <p class="pb-2  text-white  font-gobold text-lg transform duration-500 text-center">
-                            Sucursal Berazategui
+                            Telefono
                           </p>
-                          <a href="https://wa.me/+541154697383/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                            11-5469-7383</a>
-                          <p class="pb-2  text-white font-gobold text-base transform duration-500 text-center">
-                            Sucursal Quilmes
-                          </p>
-                          <a href="https://wa.me/+541154697135/?text=Hola Papelera Buenos Ayres S.Quilmes!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                            11-5469-7135</a>
+                          <a href="https://wa.me/+541154697360/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class=" mb-2 text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                            11 5469-7360</a>
                           </div>
-                      <div class="w-full ml-36 rounded-r-lg   flex flex-wrap flex-col justify-start items-center ">
+                      <div class="w-full ml-32 rounded-r-lg   flex flex-wrap flex-col justify-start items-center ">
                         <p class="pb-2  text-white font-gobold text-lg transform duration-500 text-center">
-                          Sucursal Berazategui
+                          Correo Electronico
                         </p>
-                        <a href="https://wa.me/+541154697383/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                          11-5469-7383</a>
-                        <p class="pb-2  text-white font-gobold text-base transform duration-500 text-center">
-                          Sucursal Quilmes
-                        </p>
-                        <a href="https://wa.me/+541154697135/?text=Hola Papelera Buenos Ayres S.Quilmes!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                          11-5469-7135</a>
+                        <a   rel="noopener noreferrer" class="mb-2 text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                          rrhh@papelerabsas.com.ar</a>
+                        
                         
                         </div>
                       </div>
@@ -218,30 +228,22 @@
                             <div class="w-32 h-2 bg-yellow-400 rounded-full mb-5  ">
                             </div>
                           </div>
-                          <div class="mb-5 max-w-2xl px-5 flex justify-start  items-center">
+                          <div class="mb-5  px-5 flex justify-start  items-center">
                             <div class="w-full  rounded-r-lg   flex flex-wrap flex-col justify-start items-center ">
                             <p class="pb-2  text-white  font-gobold text-lg transform duration-500 text-center">
-                              Sucursal Berazategui
+                              Telefono
                             </p>
-                            <a href="https://wa.me/+541154697383/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                              11-5469-7383</a>
-                            <p class="pb-2  text-white font-gobold text-base transform duration-500 text-center">
-                              Sucursal Quilmes
-                            </p>
-                            <a href="https://wa.me/+541154697135/?text=Hola Papelera Buenos Ayres S.Quilmes!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                              11-5469-7135</a>
+                            <a href="https://wa.me/+541169746189/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                              11 6974-6189</a>
+                            
                             </div>
                         <div class="w-full ml-36 rounded-r-lg   flex flex-wrap flex-col justify-start items-center ">
                           <p class="pb-2  text-white font-gobold text-lg transform duration-500 text-center">
-                            Sucursal Berazategui
+                            Correo Electronico
                           </p>
-                          <a href="https://wa.me/+541154697383/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                            11-5469-7383</a>
-                          <p class="pb-2  text-white font-gobold text-base transform duration-500 text-center">
-                            Sucursal Quilmes
-                          </p>
-                          <a href="https://wa.me/+541154697135/?text=Hola Papelera Buenos Ayres S.Quilmes!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                            11-5469-7135</a>
+                          <a  target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                            Compras2@papelerabsas.com.ar</a>
+                          
                           
                           </div>
                         </div>
@@ -330,38 +332,42 @@
                     </div>
                     
                     </article>
-                    <article href="#" class=" items-center bg-black  bg-opacity-20 rounded-lg shadow md:flex-row hover:bg-opacity-75 transform duration-300">
-                      <div class="flex flex-col items-center">
+                    <article href="#" class="w-1/2 items-center  bg-black bg-opacity-20 rounded-lg shadow md:flex-row hover:bg-opacity-75 transform duration-300 ">
+                      <div class="flex flex-col items-center ">
                         <h1 class="text-white text-3xl font-gobold my-6  group-hover:text-yellow-400">
                            Equipo de ventas
                         </h1>
                         <div class="w-32 h-2 bg-yellow-400 rounded-full mb-5  ">
                         </div>
                       </div>
-                      <div class="mb-5 max-w-2xl px-5 flex justify-start  items-center">
-                        <div class="w-full  rounded-r-lg   flex flex-wrap flex-col justify-start items-center ">
+                      <div class="mb-5  px-5 flex justify-between items-center ">
+                        <div class="w-full rounded-r-lg   flex  flex-col items-center ">
                         <p class="pb-2  text-white  font-gobold text-lg transform duration-500 text-center">
-                          Sucursal Berazategui
+                          Vendedores Telefonicos
                         </p>
-                        <a href="https://wa.me/+541154697383/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                          11-5469-7383</a>
-                        <p class="pb-2  text-white font-gobold text-base transform duration-500 text-center">
-                          Sucursal Quilmes
-                        </p>
-                        <a href="https://wa.me/+541154697135/?text=Hola Papelera Buenos Ayres S.Quilmes!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                          11-5469-7135</a>
+                        <div class="w-full flex justify-around py-2"><a href="https://wa.me/+541160993251/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                          11 6099-3251</a>
+                        <a href="https://wa.me/+541168603669/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                          11 6860-3669</a></div>
+                          <div class="w-full flex justify-around"><a href="https://wa.me/+541154697346/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                          11 5469-7346</a>
+                        <a href="https://wa.me/+541168604020/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                          11 6860-4020</a></div>
+                        
+                            
+                        
                         </div>
-                    <div class="w-full ml-36 rounded-r-lg   flex flex-wrap flex-col justify-start items-center ">
-                      <p class="pb-2  text-white font-gobold text-lg transform duration-500 text-center">
-                        Sucursal Berazategui
-                      </p>
-                      <a href="https://wa.me/+541154697383/?text=Hola Papelera Buenos Ayres S.Berazategui!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                        11-5469-7383</a>
+                    <div class="w-full  rounded-r-lg   flex flex-wrap flex-col justify-start items-center ">
                       <p class="pb-2  text-white font-gobold text-base transform duration-500 text-center">
-                        Sucursal Quilmes
+                        Franquicias
                       </p>
-                      <a href="https://wa.me/+541154697135/?text=Hola Papelera Buenos Ayres S.Quilmes!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
-                        11-5469-7135</a>
+                      <a href="https://wa.me/+541140928763/?text=Hola Papelera Buenos Ayres S.Quilmes!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                        11 4092-8763</a>
+                      <p class="pb-2  text-white font-gobold text-base transform duration-500 text-center">
+                        Vendedor Viajante 
+                      </p>
+                      <a href="https://wa.me/+541168603550/?text=Hola Papelera Buenos Ayres S.Quilmes!" target="_blank" rel="noopener noreferrer" class="pb-2  text-yellow-400 font-gobold text-base hover:text-yellow-500">
+                        11 6860-3550</a>
                       
                       </div>
                     </div>
@@ -379,7 +385,7 @@
         <footer class="bg-yellow-500">
           <div
             class=" top-auto bottom-auto  left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style="height: 80.5px;"
+            style="height: 80px;"
           >
             <svg
               class="absolute bottom-0 overflow-hidden"
@@ -423,29 +429,22 @@
         
                   <ul class="mt-6 space-y-4 text-sm">
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
-                        Presupuestos
+                      <a href="../pages/factory.html" class="text-neutral-800 transition hover:opacity-75">
+                        Producción
                       </a>
                     </li>
         
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
-                        Diseño
+                      <a href="../pages/ideas_BA.html" class="text-neutral-800 transition hover:opacity-75">
+                        Ideas BA
                       </a>
                     </li>
         
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
-                        Productos
-                      </a>
-                    </li>
-        
-                    <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
+                      <a href="../pages/ideas_BA_Box.html" class="text-neutral-800 transition hover:opacity-75">
                         Ideas Box
                       </a>
                     </li>
-
                   </ul>
                 </div>
         
@@ -454,7 +453,7 @@
         
                   <ul class="mt-6 space-y-4 text-sm">
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
+                      <a href="../pages/us.html" class="text-neutral-800 transition hover:opacity-75">
                         Nosotros
                       </a>
                     </li>
@@ -466,7 +465,7 @@
                     </li>
         
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
+                      <a href="../pages/contact.html" class="text-neutral-800 transition hover:opacity-75">
                         Contacto
                       </a>
                     </li>
@@ -474,11 +473,11 @@
                 </div>
         
                 <div>
-                  <p class="font-medium text-black">Links</p>
+                  <p class="font-medium text-black">RRHH</p>
         
                   <ul class="mt-6 space-y-4 text-sm">
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
+                      <a href="../pages/contact.html" class="text-neutral-800 transition hover:opacity-75">
                         ¿Queres Trabajar con nosotros?
                       </a>
                     </li>
@@ -539,10 +538,10 @@
   }
 </script>
 <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
-    
-  </script>
+  function toggleNavbar(collapseID,property) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle(property);
+  }
+  
+</script>
 </html>

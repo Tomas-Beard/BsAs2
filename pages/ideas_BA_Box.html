@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logistica</title>
+    <title>Ideas BA Box</title>
     
     <link
       rel="stylesheet"
@@ -23,12 +23,12 @@
       >
         <a
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white lg:hidden"
-          href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation "
+          href="../src/index.html"
           ><img class="w-1/4" src="/resources/Logo web_Mesa de trabajo 1.png" alt=""></a
         ><button
           class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
           type="button"
-          onclick="toggleNavbar('example-collapse-navbar')"
+          onclick="toggleNavbar('example-collapse-navbar','block')"
         >
           <i class=" hover:text-yellow-400 text-white fas fa-bars"></i>
         </button>
@@ -41,16 +41,36 @@
           <li class="flex justify-center">
             <a
               class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400  px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="#pablo"
-              >Productos</a
+              href="../pages/logistics.html"
+              >Logistica</a
             >
           </li>
-          <li class="flex justify-center">
-            <a
-              class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
-              href="../pages/factory.html"
-              >Fabrica</a
-            >
+          <li class="flex  items-center flex-col  ">
+            <button  class="mt-3 lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400 
+             px-3 py-4 lg:py-2 flex items-center text-xs uppercase" type="button"
+             onclick="toggleNavbar('dropdownHover','absolute')"
+             >Fabrica <svg class="w-2.5 h-2.5 ms-2.5" 
+             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg>
+              </button>
+              
+              <div id="dropdownHover" class=" mt-11 hidden bg-neutral-800 px-3.5 rounded-b-lg ">
+                  <ul class="" aria-labelledby="dropdownHoverButton">
+                    <li class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400   py-4 lg:py-2 flex justify-center text-xs uppercase ">
+                      <a href="../pages/factory.html" class="">Servicios</a>
+                    </li>
+                    <li class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400   py-4 lg:py-2 flex justify-center text-xs uppercase ">
+                      <a href="../pages/ideas_BA_Box.html" class="">Ideas Box</a>
+                    </li>
+                    <li class="lg:text-white lg:hover:text-yellow-300 text-white hover:text-yellow-400   py-4 lg:py-2 flex justify-center text-xs uppercase ">
+                      <a href="../pages/ideas_BA.html" class="">Ideas BA</a>
+                    </li>
+                   
+              
+                  </ul>
+              </div>
+           
           </li>
           <li class="flex justify-center">
             <a
@@ -308,7 +328,7 @@
         <footer class="bg-yellow-500">
           <div
             class=" top-auto bottom-auto  left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style="height: 80.5px;"
+            style="height: 80px;"
           >
             <svg
               class="absolute bottom-0 overflow-hidden"
@@ -352,29 +372,22 @@
         
                   <ul class="mt-6 space-y-4 text-sm">
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
-                        Presupuestos
+                      <a href="../pages/factory.html" class="text-neutral-800 transition hover:opacity-75">
+                        Producción
                       </a>
                     </li>
         
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
-                        Diseño
+                      <a href="../pages/ideas_BA.html" class="text-neutral-800 transition hover:opacity-75">
+                        Ideas BA
                       </a>
                     </li>
         
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
-                        Productos
-                      </a>
-                    </li>
-        
-                    <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
+                      <a href="../pages/ideas_BA_Box.html" class="text-neutral-800 transition hover:opacity-75">
                         Ideas Box
                       </a>
                     </li>
-
                   </ul>
                 </div>
         
@@ -383,7 +396,7 @@
         
                   <ul class="mt-6 space-y-4 text-sm">
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
+                      <a href="../pages/us.html" class="text-neutral-800 transition hover:opacity-75">
                         Nosotros
                       </a>
                     </li>
@@ -395,7 +408,7 @@
                     </li>
         
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
+                      <a href="../pages/contact.html" class="text-neutral-800 transition hover:opacity-75">
                         Contacto
                       </a>
                     </li>
@@ -403,11 +416,11 @@
                 </div>
         
                 <div>
-                  <p class="font-medium text-black">Links</p>
+                  <p class="font-medium text-black">RRHH</p>
         
                   <ul class="mt-6 space-y-4 text-sm">
                     <li>
-                      <a href="#" class="text-neutral-800 transition hover:opacity-75">
+                      <a href="../pages/contact.html" class="text-neutral-800 transition hover:opacity-75">
                         ¿Queres Trabajar con nosotros?
                       </a>
                     </li>
@@ -468,10 +481,10 @@
   }
 </script>
 <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
-    
-  </script>
+  function toggleNavbar(collapseID,property) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle(property);
+  }
+  
+</script>
 </html>
