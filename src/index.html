@@ -114,8 +114,8 @@
     <main>
     
         <div
-          class="relative pt-16 flex content-center items-center justify-center"
-          style="min-height: 100vh;"
+          class="relative pt-16 flex content-center items-center justify-center min-h-[50vh] lg:min-h-[100vh]  "
+          
         >
           <div
             class="absolute top-0 w-full h-full bg-center bg-cover"
@@ -136,10 +136,7 @@
               <div class="w-full px-4 ml-auto mr-auto text-center">
                   
                  <div class="">
-                    <img class=" w-6/12 ml-auto mr-auto mb-2" src="/resources/Logo web_Mesa de trabajo 1.png" alt="">
-                 
-                   
-                
+                    <img class=" w-3/4 ml-auto mr-auto mb-2 lg:w-1/2" src="/resources/Logo web_Mesa de trabajo 1.png" alt="">
                 </div>
                 
               </div>
@@ -159,14 +156,14 @@
               y="0"
             >
               <polygon
-                class="text-yellow-400 fill-current"
+                class="text-yellow-500 fill-current"
                 points="2560 0 2560 100 0 100"
               ></polygon>
             </svg>
           </div>
         </div>
         
-        <section class="pb-20  -mt-24">
+        <section class="pb-10  -mt-24 lg:pb-20">
          <div class="container mx-auto px-4">
             <div class="flex flex-wrap">
               <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">    
@@ -175,11 +172,11 @@
             <div class="flex flex-wrap items-center mt-28 
           ">
               <div class="w-full md:w-5/12 px-4 mx-auto ">
-                <h3 class=" text-5xl mb-2 font-gobold leading-normal text-yellow-500">
+                <h3 class=" text-3xl mb-2 font-gobold leading-normal text-yellow-500 lg:text-5xl">
                   Nuestra Historia
                 </h3>
                 <p
-                  class="text-lg font-gblowplus leading-8 mt-4 mb-4 text-white "
+                  class="text-base font-gblowplus leading-8 mb-4 mt-4  text-white lg:block lg:text-lg lg:mb-0"
                 >
                 Papelera Buenos Ayres nace como un proyecto familiar en el año 1993, con
                 un pequeño local en quilmes oeste.  <br>
@@ -187,6 +184,10 @@
                 sobre Av.calchaquí y luego en 1999 en su actual predio de 1400 m2.
                 Además, incorpora las sucursales de berazategui (1000 m2)
                 y luego la de quilmes centro (600 m2). <br>
+                </p>
+                <p
+                  class=" hidden text-base font-gblowplus leading-8  mb-4 text-white lg:block lg:text-lg"
+                >
                 Entre los años 2007 y 2018, la empresa retomó la apuesta industrial incorporando un
                 amplio portfolio de productos de elaboración propia en nuestra planta de 3500 m2.
                 <br>
@@ -202,7 +203,7 @@
                   >Conoce mas sobre nosotros!</a
                 ></div>
               </div>
-              <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div class=" hidden w-full md:w-4/12 px-4 mr-auto ml-auto mt-4 lg:block">
                 <div
                   class="relative flex flex-col min-w-0 break-words bg-yellow-400 w-full mb-6 shadow-lg "
                 >
@@ -236,21 +237,20 @@
             </div>
           </div>
         </section>
-        <section class="relative py-20">
-         
-          <h3 class=" text-5xl md:w-5/12 mb-6 px-4 text-left ml-28 font-gobold leading-normal text-yellow-500">Nuestros Locales</h3>
-          <div class="container   flex justify-center">
+        <section class="relative pb-10 lg:pt-10 lg:pb-20">
+          <h3 class=" text-3xl md:w-5/12 px-4 mb-6 text-left ml-5 font-gobold leading-normal text-yellow-500 lg:text-5xl lg:ml-28 ">Nuestros Locales</h3>
+          <div class="container  flex flex-col justify-center lg:flex-row">
             
-              <article class=" max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(/resources/Suc.\ Quilmes.jpg);">
-                <div class="bg-black bg-opacity-20 min-h-150 px-14 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
-                  <h1 class="text-white text-3xl font-gobold transform translate-y-20 group-hover:translate-y-0 duration-300 group-hover:text-yellow-400">
+              <article class=" max-w-sm shadow-xl bg-cover bg-center h-[50vh] transform duration-500 hover:-translate-y-2 cursor-pointer group lg:min-h-150 lg:h-full" style="background-image: url(/resources/Suc.\ Quilmes.jpg);">
+                <div class="bg-black bg-opacity-20 h-[50vh] px-14 flex flex-wrap flex-col pt-20 hover:bg-opacity-75 transform duration-300 lg:min-h-150 lg:h-full lg:pt-96">
+                  <h1 class="text-white text-3xl font-gobold transform translate-y-20 group-hover:translate-y-0 duration-300 group-hover:text-yellow-400 lg:text-3xl">
                     Sucursal Quilmes
                 </h1>
-                <h3 class="text-white text-l opacity-0 font-gobold mb-1 transform  group-hover:opacity-100 mt-2 translate-y-0  duration-300 ">11-5469-7135</h3>
-                <div class="w-16 h-2 bg-yellow-400 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                <h3 class="text-white text-base opacity-0 font-gobold mb-1 transform  group-hover:opacity-100 mt-2 translate-y-0  duration-300 ">11-5469-7135</h3>
+                <div class="w-16 h-2 bg-yellow-400 rounded-full mb-1 transform translate-y-20 group-hover:translate-y-0 duration-300 lg:mb-5">
 
                 </div>
-                <p class="opacity-0 text-white font-gobold text-l group-hover:opacity-80 transform duration-500">
+                <p class="opacity-0 text-white font-gobold text-base group-hover:opacity-80 transform duration-500">
                   Horarios:<br>
                   Lunes a Viernes: <br> 8:00 a 13:00hs - 13:45 a 17:00hs<br>
                   Sábados:<br> 8:00 a 13:00hs<br>
@@ -258,13 +258,13 @@
                 <a href="https://maps.app.goo.gl/DYTZduvX5Fjx4gG9A"target="_blank" class="pt-3 pb-10 flex justify-center opacity-0 group-hover:opacity-80 transform duration-500"><i class="fa-solid fa-location-dot text-4xl text-yellow-400" ></i></a>
                 </div>
             </article>
-            <article class=" max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(/resources/Suc.\ Berazategui.jpg);">
-              <div class="bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+            <article class="max-w-sm shadow-xl bg-cover bg-center h-[50vh] transform duration-500 hover:-translate-y-2 cursor-pointer group lg:min-h-150 lg:h-full" style="background-image: url(/resources/Suc.\ Berazategui.jpg);">
+              <div class="bg-black bg-opacity-20 h-[50vh] px-10 flex flex-wrap flex-col pt-20 hover:bg-opacity-75 transform duration-300 lg:min-h-150 lg:h-full lg:pt-96">
                   <h1 class="text-white text-3xl font-gobold  transform translate-y-20 group-hover:translate-y-0 duration-300 group-hover:text-yellow-400">
                       Sucursal Berazategui
                   </h1>
                   <h3 class="text-white text-l opacity-0 font-gobold mb-1 transform  group-hover:opacity-100 mt-2 translate-y-0  duration-300 ">11-5469-7383</h3>
-                  <div class="w-16 h-2 bg-yellow-400 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                  <div class="w-16 h-2 bg-yellow-400 rounded-full mb-1 transform translate-y-20 group-hover:translate-y-0 duration-300 lg:mb-5">
                   </div>
                   <p class=" opacity-0 text-white font-gobold text-l group-hover:opacity-80 transform duration-500">
                     Horarios:<br>
@@ -274,13 +274,13 @@
                   <a href="https://maps.app.goo.gl/zTKWUhQ5PWF7u4bQ6" target="_blank" class="pt-3 pb-10 flex justify-center opacity-0 group-hover:opacity-80 transform duration-500"><i class="fa-solid fa-location-dot text-4xl text-yellow-400" ></i></a>
               </div>
           </article>
-            <article class=" max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(/resources/Suc.\ Varela.jpg);">
-              <div class="bg-black bg-opacity-20 min-h-150 px-14 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+            <article class=" max-w-sm shadow-xl bg-cover bg-center h-[50vh] transform duration-500 hover:-translate-y-2 cursor-pointer group lg:min-h-150 lg:h-full" style="background-image: url(/resources/Suc.\ Varela.jpg);">
+              <div class="bg-black bg-opacity-20 h-[50vh] px-14 flex flex-wrap flex-col pt-20 hover:bg-opacity-75 transform duration-300 lg:min-h-150 lg:h-full lg:pt-96">
                   <h1 class="text-white text-3xl font-gobold  transform translate-y-20 group-hover:translate-y-0 duration-300 group-hover:text-yellow-400">
                       Sucursal F.Varela
                   </h1>
                   <h3 class="text-white text-l opacity-0 font-gobold mb-1 transform  group-hover:opacity-100 mt-2 translate-y-0  duration-300 ">11-6860-3731</h3>
-                  <div class="w-16 h-2 bg-yellow-400 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                  <div class="w-16 h-2 bg-yellow-400 rounded-full mb-1 transform translate-y-20 group-hover:translate-y-0 duration-300 lg:mb-5">
                   </div>
                   <p class=" opacity-0 text-white font-gobold text-l group-hover:opacity-80 transform duration-500">
                     Horarios:<br>
@@ -290,13 +290,13 @@
                   <a href="https://maps.app.goo.gl/jM4heqdcsfsXXVVP6" target="_blank" class="pt-3 pb-10 flex justify-center opacity-0 group-hover:opacity-80 transform duration-500"><i class="fa-solid fa-location-dot text-4xl text-yellow-400" ></i></a>
               </div>
           </article>
-          <article class=" max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style="background-image: url(/resources/PHOTO-2023-10-17-10-46-55.jpg);">
-            <div class="bg-black bg-opacity-20 min-h-150 px-14 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+          <article class=" max-w-sm shadow-xl bg-cover bg-center h-[50vh] transform duration-500 hover:-translate-y-2 cursor-pointer group lg:min-h-150 lg:h-full" style="background-image: url(/resources/PHOTO-2023-10-17-10-46-55.jpg);">
+            <div class="bg-black bg-opacity-20 h-[50vh] px-14 flex flex-wrap flex-col pt-20 hover:bg-opacity-75 transform duration-300 lg:min-h-150 lg:h-full lg:pt-96">
                 <h1 class="text-white text-3xl font-gobold  transform translate-y-20 group-hover:translate-y-0 duration-300 group-hover:text-yellow-400">
                     Sucursal Solano
                 </h1>
                 <h3 class="text-white text-l opacity-0 font-gobold mb-1 transform  group-hover:opacity-100 mt-2 translate-y-0  duration-300 "> 11-6101-1480</h3>
-                <div class="w-16 h-2 bg-yellow-400 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                <div class="w-16 h-2 bg-yellow-400 rounded-full mb-1 transform translate-y-20 group-hover:translate-y-0 duration-300 lg:mb-5">
                 </div>
                 <p class="pb opacity-0 text-white font-gobold text-l group-hover:opacity-80 transform duration-500">
                   Horarios:<br>
@@ -314,26 +314,35 @@
         <section class="pb-20  -mt-14">
           <div class="container mx-auto px-4">
              
-             <div class="flex flex-wrap items-center mt-28 
+             <div class="flex flex-wrap items-center mt-16 lg:mt-28 
            ">
                <div class="w-full md:w-5/12 px-4 mx-auto ">
-                 <h3 class=" text-5xl mb-2 font-gobold leading-normal text-yellow-500">
+                 <h3 class=" text-3xl hidden mb-2 font-gobold leading-normal text-yellow-500 lg:text-5xl lg:block">
                    Trabajamos mano a mano con grandes marcas
                  </h3>
+                 <h3 class=" text-3xl mb-2 font-gobold leading-normal text-yellow-500 lg:text-5xl lg:block">
+                  Nuestro compromiso con grandes marcas
+                </h3>
                  <p
-                   class="text-lg font-gblowplus leading-8 mt-4 mb-4 text-white "
+                   class="text-lg hidden font-gblowplus leading-8 mt-4 mb-4 text-white lg:block"
                  >
                   Desde Papelera Buenos Ayres nos sentimos orgullosos de poder acompañar a diferentes marcas en su día a día, 
                   cuidando todos los detalle para que cada momento sea único. 
                   <br>
                  Nuestro compromiso es total y nos sentimos sumamente agradecidos con quienes nos elijen en todo momento para acompañarlos durante todos los días. <br>
                  </p>
+                 <p
+                   class="text-lg font-gblowplus leading-8 mt-4 mb-4 text-white lg:hidden"
+                 >
+                  Desde Papelera Buenos Ayres nos sentimos orgullosos de poder acompañar a diferentes marcas en su día a día, 
+                  cuidando todos los detalle para que cada momento sea único. 
+                 </p>
                 
                 
                </div>
-               <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+               <div class="w-full md:w-4/12 px-4 mr-auto ml-auto ">
                  <div
-                   class="relative flex flex-col min-w-0 break-words bg-yellow-400 w-full mb-6 shadow-lg "
+                   class="relative flex flex-col min-w-0 break-words bg-yellow-400 w-full  shadow-lg lg:mb-6 "
                  >
                  <div class="relative w-full mx-auto">
                   <div class="slide relative">
@@ -361,7 +370,7 @@
           
               </div>
 
-                   <blockquote class="relative p-8 mb-4">
+                   <blockquote class="relative p-8 mb-4 hidden lg:block">
                      <svg
                        preserveAspectRatio="none"
                        xmlns="http://www.w3.org/2000/svg"
@@ -371,13 +380,13 @@
                      >
                        <polygon
                          points="-30,95 583,95 583,65"
-                         class="text-yellow-400 fill-current"
+                         class="text-yellow-400 fill-current hidden lg:block"
                        ></polygon>
                      </svg>
-                     <h4 class="text-xl font-gobold ">
+                     <h4 class="text-xl font-gobold hidden lg:block">
                        Producto a Producto
                      </h4>
-                     <p class="text-md font-goboldthin mt-2 ">
+                     <p class="text-md font-goboldthin mt-2 hidden lg:block">
                        Estamos satifechos con la calidad de nuestro productos, esto se refleja en la fidelidad de los clientes al elejirmos como su proveedor
                      </p>
                    </blockquote>
@@ -409,26 +418,26 @@
           <div class="container mx-auto px-4  lg:pt-20 lg:pb-40">
             <div class="flex flex-wrap text-center justify-center">
               <div class="w-full lg:w-6/12 px-4 pt-16 lg:pt-0">
-                <h2 class="text-5xl font-gobold uppercase text-neutral-800">Contactanos</h2>
+                <h2 class="text-3xl font-gobold uppercase text-neutral-800 lg:text-5xl">Contactanos</h2>
                 <p class="text-lg font-gblowplus leading-8 mt-4 mb-4 text-white">
                   Te dejamos algunos de nuestros canales de comunicaciones para que puedas contactarnos siempre que quieras de manere agil y rapida
                 </p>
                 
               </div>
             </div>
-            <div class="flex flex-wrap mt-12 justify-center">
+            <div class="flex flex-wrap mt-5 justify-center lg:mt-12">
               <div class="w-full lg:w-3/12  text-center">
                 <div
                   class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
                 >
                 <i class="fa-brands fa-whatsapp fa-beat-fade text-2xl"></i>
                 </div>
-                <h6 class="text-xl mt-5 font-gblowplus leading-8 text-neutral-800">
+                <h6 class="text-xl mt-3 mb-3 font-gblowplus leading-8 text-neutral-800 lg:mt-5 lg:mb-0">
                   WhatsApp
                 </h6>
                 <div>
                   <a class="flex justify-center" href="">
-                    <img class="w-1/2" src="../resources/QR Instagram.jpg" alt="">
+                    <img class="w-1/2 mb-5 lg:mb-0" src="../resources/QR Instagram.jpg" alt="">
                   </a>
                 </div>
               </div>
@@ -438,12 +447,12 @@
                 >
                 <i class="fa-brands fa-instagram fa-beat-fade text-2xl"></i>
                 </div>
-                <h5 class="text-xl mt-5 font-gblowplus leading-8 text-neutral-800">
+                <h5 class="text-xl mt-3 mb-3 font-gblowplus leading-8 text-neutral-800 lg:mt-5 lg:mb-0">
                   Instagram
                 </h5>
                 <div>
                   <a class="flex justify-center" href="">
-                    <img class="w-1/2" src="../resources/QR Instagram.jpg" alt="">
+                    <img class="w-1/2 mb-5 lg:mb-0" src="../resources/QR Instagram.jpg" alt="">
                   </a>
                 </div>
               </div>
@@ -453,19 +462,19 @@
                 >
                 <i class="fa-brands fa-facebook fa-beat-fade text-2xl"></i>
                 </div>
-                <h5 class="text-xl mt-5 font-gblowplus leading-8 text-neutral-800">Facebook</h5>
+                <h5 class="text-xl mt-3 mb-3 font-gblowplus leading-8 text-neutral-800 lg:mt-5 lg:mb-0">Facebook</h5>
                 <div>
                   <a class="flex justify-center" href="">
-                    <img class="w-1/2" src="../resources/QR Instagram.jpg" alt="">
+                    <img class="w-1/2  lg:mb-0" src="../resources/QR Instagram.jpg" alt="">
                   </a>
                 </div>
               </div>
-              <p class="text-base font-gblowplus leading-4 mt-10 text-white">
+              <p class="text-base text-center font-gblowplus leading-4 mt-6 text-white lg:mt-10">
                 Puedes escanear los QR o simplemente cliquealos para redirigirte
               </p>
             </div>
             <div class="flex justify-center mt-10">
-              <article href="#" class="w-1/2 items-center  bg-neutral-800  rounded-lg shadow md:flex-row hover:bg-opacity-95 transform duration-300 ">
+              <article href="#" class="w-full lg:w-1/2 items-center  bg-neutral-800  rounded-lg shadow md:flex-row hover:bg-opacity-95 transform duration-300 ">
                 <div class="flex flex-col items-center ">
                   <h1 class="text-white text-3xl font-gobold my-6  group-hover:text-yellow-400">
                      Equipo de ventas
@@ -473,7 +482,7 @@
                   <div class="w-32 h-2 bg-yellow-400 rounded-full mb-5  ">
                   </div>
                 </div>
-                <div class="mb-5  px-5 flex justify-between items-center ">
+                <div class="mb-5  px-5 flex justify-between items-center flex-col lg:flex-row">
                   <div class="w-full rounded-r-lg   flex  flex-col items-center ">
                   <p class="pb-2  text-white  font-gobold text-lg transform duration-500 text-center">
                     Vendedores Telefonicos
@@ -518,7 +527,7 @@
           >
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
               <div>
-                <img src="/resources/Logo Papelera.svg" alt="">
+                <img src="/resources/Logo Papelera.svg" class="w-1/2 lg:w-full">
                 <p class="mt-4 max-w-xs text-white">
                   Papelera Buenos Ayres, un lugar, todas las opciones para vos y tu comercio
                 </p>
